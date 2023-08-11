@@ -42,7 +42,6 @@ public class VentaCrudRepositoryImpl implements ICrudRepository<Venta> {
 	}
 
 	@Override
-	@Transactional
 	public void delete(Long id) {
 		em.remove(id);
 	}

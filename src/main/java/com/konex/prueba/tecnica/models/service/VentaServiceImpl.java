@@ -35,6 +35,7 @@ public class VentaServiceImpl implements IVentaService {
 	}
 
 	@Override
+	@Transactional
 	public void delete(Long id) {
 		service.delete(id);
 		
@@ -47,6 +48,7 @@ public class VentaServiceImpl implements IVentaService {
 	}
 
 	@Override
+	@Transactional
 	public List<Venta> findAllByBetween(LocalDate desde, LocalDate hasta) {
 		// TODO Auto-generated method stub
 		return service.findAllByBetween(desde, hasta);

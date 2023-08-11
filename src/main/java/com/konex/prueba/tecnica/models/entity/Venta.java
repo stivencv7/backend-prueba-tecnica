@@ -12,7 +12,6 @@ import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
 
-@CrossOrigin(origins ="http://localhost:4200" )
 @Entity
 @Table(name="ventas")
 public class Venta {
